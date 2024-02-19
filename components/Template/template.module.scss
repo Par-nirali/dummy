@@ -1,0 +1,26 @@
+.headerTemplateMainDiv {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  // background-color: #ffff;
+}
+
+.templateGalleryMain {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1150px) and (min-width: 426px) {
+  .homeContentWrapperMainDiv {
+    padding: 0px 30px;
+  }
+  // .templateGalleryMain {
+  //   padding: 10px 20px;
+  // }
+}
+@media (max-width: 426px) {
+  .homeContentWrapperMainDiv {
+    padding: 0px 20px;
+  }
+  .templateGalleryMain {
+    padding: 10px 0px;
+  }
+}

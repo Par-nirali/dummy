@@ -1,0 +1,533 @@
+.formContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  position: fixed;
+  top: 0px;
+  z-index: 111;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #131313a6;
+  justify-content: center;
+}
+.formDetail {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #efefef;
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #1f1e1f;
+}
+.fromMainDetails {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fromMainLeft {
+  width: 45%;
+  height: auto;
+  padding: 50px 70px;
+}
+.formSubLeft {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  color: #fff;
+
+  .fromSubLeftImg {
+    h2 {
+      font-size: 36px;
+      color: white;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    img {
+      max-width: 60px;
+      height: auto;
+    }
+  }
+  .formLeftCenter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    .formLeftCenterHead {
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: normal;
+      color: white;
+      margin-bottom: 5px;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: black;
+      border: none;
+      border-radius: 50px;
+      background-color: white;
+      padding: 15px 20px;
+      width: 100%;
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: normal;
+        color: black;
+      }
+    }
+    div &:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: black;
+      border: none;
+      border-radius: 50px;
+      background-color: white;
+      padding: 15px 20px;
+      width: 100%;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: normal;
+        color: black;
+      }
+    }
+  }
+  .formLeftBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 0px 20px;
+    .formLeftBottomHead {
+      max-width: 250px;
+      margin: 0 auto;
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: normal;
+      color: white;
+      margin-bottom: 5px;
+    }
+    .formLeftBottomSub {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      .formLeftBottomApple {
+        // width: 50%;
+        width: 230px;
+        height: 50px;
+        img {
+          border-radius: 6px;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #c386c7;
+        }
+      }
+      .formLeftBottomGoogle {
+        // width: 50%;
+        width: 230px;
+        height: auto;
+        img {
+          border-radius: 6px;
+          width: 100%;
+          height: 100%;
+          border: 1px solid #c386c7;
+        }
+      }
+    }
+  }
+}
+.formMainRight {
+  width: 55%;
+  height: auto;
+  div {
+    max-width: 650px;
+    height: 650px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media (max-width: 1250px) and (min-width: 850px) {
+  .formDetail {
+    width: 85%;
+  }
+  .fromMainLeft {
+    width: 50%;
+    padding: 40px 30px;
+  }
+  .formSubLeft {
+    width: 100%;
+    gap: 30px;
+    .fromSubLeftImg {
+      h2 {
+        font-size: 32px;
+      }
+      img {
+        max-width: 40px;
+        height: auto;
+      }
+    }
+    .formLeftCenter {
+      gap: 10px;
+      .formLeftCenterHead {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      div {
+        padding: 10px 15px;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      &:last-child {
+        padding: 10px 15px;
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .formLeftBottom {
+      gap: 5px;
+      padding: 0px 10px;
+      .formLeftBottomHead {
+        max-width: 250px;
+        font-size: 20px;
+      }
+      .formLeftBottomSub {
+        gap: 8px;
+        .formLeftBottomApple {
+          // width: 50%;
+          width: 230px;
+          height: auto;
+          img {
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+          }
+        }
+        .formLeftBottomGoogle {
+          // width: 50%;
+          width: 230px;
+          height: auto;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .formMainRight {
+    width: 50%;
+    height: auto;
+    div {
+      max-width: 500px;
+      height: 550px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 850px) and (min-width: 768px) {
+  .formDetail {
+    width: 90%;
+  }
+  .fromMainLeft {
+    width: 50%;
+    padding: 40px 30px;
+  }
+  .formSubLeft {
+    width: 100%;
+    gap: 25px;
+    .fromSubLeftImg {
+      h2 {
+        font-size: 30px;
+      }
+      img {
+        max-width: 40px;
+        height: auto;
+      }
+    }
+    .formLeftCenter {
+      gap: 10px;
+      .formLeftCenterHead {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      div {
+        padding: 10px 15px;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      &:last-child {
+        padding: 10px 15px;
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .formLeftBottom {
+      gap: 5px;
+      padding: 0px 10px;
+      .formLeftBottomHead {
+        max-width: 250px;
+        font-size: 18px;
+      }
+      .formLeftBottomSub {
+        gap: 8px;
+        .formLeftBottomApple {
+          // width: 50%;
+          width: 230px;
+          height: auto;
+          img {
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+          }
+        }
+        .formLeftBottomGoogle {
+          // width: 50%;
+          width: 230px;
+          height: auto;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .formMainRight {
+    width: 50%;
+    height: auto;
+    div {
+      max-width: 450px;
+      height: 450px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) and (min-width: 600px) {
+  .formDetail {
+    width: 85%;
+  }
+  .fromMainLeft {
+    width: 60%;
+    padding: 40px 30px;
+  }
+  .formSubLeft {
+    width: 100%;
+    gap: 25px;
+    .fromSubLeftImg {
+      h2 {
+        font-size: 30px;
+      }
+      img {
+        max-width: 30px;
+        height: auto;
+      }
+    }
+    .formLeftCenter {
+      gap: 10px;
+      .formLeftCenterHead {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      div {
+        padding: 10px 15px;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      &:last-child {
+        padding: 10px 15px;
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .formLeftBottom {
+      gap: 5px;
+      padding: 0px 10px;
+      .formLeftBottomHead {
+        max-width: 250px;
+        font-size: 18px;
+      }
+      .formLeftBottomSub {
+        gap: 8px;
+        .formLeftBottomApple {
+          // width: 50%;
+          width: 230px;
+          height: auto;
+          img {
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+          }
+        }
+        .formLeftBottomGoogle {
+          // width: 50%;
+          width: 230px;
+          height: auto;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .formMainRight {
+    width: 40%;
+    height: auto;
+    div {
+      max-width: 450px;
+      height: 480px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .formDetail {
+    width: 85%;
+  }
+  .fromMainLeft {
+    width: 100%;
+    padding: 40px 30px;
+  }
+  .formSubLeft {
+    width: 100%;
+    gap: 25px;
+    .fromSubLeftImg {
+      h2 {
+        font-size: 30px;
+      }
+      img {
+        max-width: 30px;
+        height: auto;
+      }
+    }
+    .formLeftCenter {
+      gap: 10px;
+      .formLeftCenterHead {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      div {
+        padding: 10px 15px;
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      &:last-child {
+        padding: 10px 15px;
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .formLeftBottom {
+      gap: 5px;
+      padding: 0px 10px;
+      .formLeftBottomHead {
+        max-width: 250px;
+        font-size: 16px;
+      }
+      .formLeftBottomSub {
+        gap: 8px;
+        .formLeftBottomApple {
+          width: 230px;
+          height: auto;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .formLeftBottomGoogle {
+          width: 230px;
+          height: auto;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .formMainRight {
+    display: none;
+  }
+}

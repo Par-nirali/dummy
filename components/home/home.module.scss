@@ -1,0 +1,257 @@
+.homeMainDiv {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  //   border-bottom: 1px solid #c386c7;
+}
+.homeContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 16px 50px;
+}
+#contentMainId {
+  width: 100%;
+  height: auto;
+}
+.contentMainContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+.contentSubDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  h2 {
+    max-width: 600px;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.2;
+    span {
+      background: -webkit-linear-gradient(
+        120deg,
+        rgba(191, 118, 164, 0.9),
+        rgb(158, 5, 112)
+      );
+      // -webkit-linear-gradient(120deg, rgb(236 89 71 / 90%), rgb(158, 5, 112))
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      // font-size: 56px;
+      font-weight: bolder;
+      // line-height: 1.2;
+    }
+  }
+  p {
+    color: #8f8f8f;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .PromptMain {
+    max-width: 500px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 50px;
+    border: 1px solid #c386c7;
+    // p {
+    // }
+    input {
+      margin: 0;
+      color: #8f8f8f;
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: left;
+      padding: 0px 50px 0px 10px;
+      font-weight: 600;
+      background: transparent;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    .actions .joinButton {
+      margin: 0;
+      padding: 10px 40px;
+      margin-right: 0px;
+      background-image: linear-gradient(
+        120deg,
+        rgba(194, 47, 204, 0.9),
+        rgb(158, 5, 112)
+      );
+      // background-color: #2e4244;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  .contentRobo {
+    position: absolute;
+    top: 350px;
+    right: 50px;
+    img {
+      max-width: 180px;
+      height: auto;
+    }
+  }
+  .contentFeatherBig {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    img {
+      max-width: 180px;
+      height: auto;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .contentRobo {
+    display: none;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .contentMainContainer {
+    padding: 50px 30px;
+  }
+  .contentSubDiv {
+    gap: 20px;
+    h2 {
+      max-width: 500px;
+      font-size: 44px;
+      line-height: 1;
+      span {
+        // font-size: 44px;
+      }
+    }
+    p {
+      max-width: 800px;
+      padding-left: 0px;
+      margin-bottom: 10px;
+    }
+    .PromptMain {
+      max-width: 500px;
+      padding: 10px;
+      gap: 20px;
+      border: 1px solid #c386c7;
+      input {
+        // margin: 0;
+        padding: 0px 0px 0px 10px;
+      }
+      .actions .joinButton {
+        padding: 10px 40px;
+        margin-right: 0px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) and (min-width: 425px) {
+  .homeContainer {
+    padding: 15px 40px;
+  }
+  .contentMainContainer {
+    padding: 30px 10px;
+  }
+  .contentSubDiv {
+    gap: 20px;
+    h2 {
+      max-width: 700px;
+      font-size: 36px;
+      line-height: 1;
+      span {
+        // font-size: 36px;
+      }
+    }
+    p {
+      max-width: 800px;
+      font-size: 16px;
+      padding-left: 0px;
+      margin-bottom: 10px;
+    }
+    .PromptMain {
+      max-width: max-content;
+      padding: 8px;
+      gap: 20px;
+      border: 1px solid #c386c7;
+      input {
+        font-size: 16px;
+        padding: 0px 0px 0px 10px;
+      }
+      .actions .joinButton {
+        padding: 10px 25px;
+        margin-right: 0px;
+        font-size: 14px;
+      }
+    }
+    .contentFeatherBig {
+      position: absolute;
+      top: 150px;
+      left: 0px;
+      img {
+        max-width: 150px;
+        height: auto;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .homeContainer {
+    padding: 15px 20px;
+  }
+  .contentMainContainer {
+    padding: 30px 10px;
+  }
+  .contentSubDiv {
+    gap: 20px;
+    h2 {
+      max-width: max-content;
+      font-size: 30px;
+      line-height: 1;
+    }
+    p {
+      max-width: 800px;
+      font-size: 16px;
+      padding-left: 0px;
+      margin-bottom: 10px;
+    }
+    .PromptMain {
+      max-width: max-content;
+      padding: 8px;
+      gap: 20px;
+      border: 1px solid #c386c7;
+      input {
+        font-size: 16px;
+        padding: 0px 0px 0px 10px;
+      }
+      .actions .joinButton {
+        padding: 10px 25px;
+        margin-right: 0px;
+        font-size: 14px;
+      }
+    }
+    .contentFeatherBig {
+      position: absolute;
+      top: 150px;
+      left: 0px;
+      img {
+        max-width: 150px;
+        height: auto;
+      }
+    }
+  }
+}

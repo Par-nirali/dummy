@@ -1,0 +1,286 @@
+.customerSupMainDiv {
+  width: 100%;
+  height: auto;
+}
+.customerSupContainer {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  //   left: 32%;
+  z-index: 111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  transition: 0.9s ease-in-out;
+}
+.customerSupSubDiv {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #000;
+}
+.customerSupHead {
+  width: 100%;
+  text-align: center;
+  h2 {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #e7e7e7;
+  }
+  p {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #e1e1e1;
+  }
+}
+.customerSupText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  //   padding: 10px 80px;
+  .customerSubInfo {
+    padding: 50px;
+    border-radius: 16px;
+    width: 30%;
+    background-color: #1a1819;
+    text-align: center;
+    .contactIcon {
+      margin: 0 auto;
+      width: 80px;
+      height: auto;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .messageIcon {
+      margin: 0 auto;
+      width: 80px;
+      height: auto;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    p {
+      font-size: 22px;
+      line-height: 1.5;
+      font-weight: 400;
+      color: #e1e1e1;
+    }
+  }
+}
+.customerSupBtn {
+  width: 100%;
+  text-align: center;
+  button {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: white;
+    padding: 15px 45px;
+    background-image: linear-gradient(
+      0deg,
+      rgba(187, 7, 200, 0.9),
+      rgb(158, 5, 112)
+    );
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    width: fit-content;
+    opacity: 0.9;
+
+    &:hover {
+      opacity: 1;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+@media (max-width: 1024px) and (min-width: 750px) {
+  .customerSupSubDiv {
+    width: 70%;
+    gap: 20px;
+    padding: 30px;
+  }
+  .customerSupHead {
+    width: 100%;
+    h2 {
+      font-size: 28px;
+      line-height: 1.3;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+  }
+  .customerSupText {
+    gap: 20px;
+    //   padding: 10px 80px;
+    .customerSubInfo {
+      padding: 30px;
+      border-radius: 16px;
+      width: 40%;
+      .contactIcon {
+        width: 50px;
+        height: auto;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .messageIcon {
+        width: 50px;
+        height: auto;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+  }
+  .customerSupBtn {
+    width: 100%;
+    text-align: center;
+    button {
+      font-size: 18px;
+      line-height: 1.4;
+      padding: 12px 40px;
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 750px) and (min-width: 450px) {
+  .customerSupSubDiv {
+    width: 80%;
+    gap: 20px;
+    padding: 20px;
+  }
+  .customerSupHead {
+    width: 100%;
+    h2 {
+      font-size: 26px;
+      line-height: 1.3;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+  }
+  .customerSupText {
+    gap: 15px;
+    //   padding: 10px 80px;
+    .customerSubInfo {
+      padding: 25px;
+      border-radius: 16px;
+      width: 50%;
+      .contactIcon {
+        width: 40px;
+        height: auto;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .messageIcon {
+        width: 40px;
+        height: auto;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  }
+  .customerSupBtn {
+    width: 100%;
+    text-align: center;
+    button {
+      font-size: 18px;
+      line-height: 1.4;
+      padding: 12px 40px;
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .customerSupSubDiv {
+    width: 90%;
+    gap: 25px;
+    padding: 30px 20px;
+  }
+  .customerSupHead {
+    width: 100%;
+    h2 {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+  .customerSupText {
+    gap: 15px;
+    //   padding: 10px 80px;
+    .customerSubInfo {
+      padding: 20px 15px;
+      border-radius: 16px;
+      width: 50%;
+      .contactIcon {
+        width: 40px;
+        height: auto;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .messageIcon {
+        width: 40px;
+        height: auto;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+  }
+  .customerSupBtn {
+    width: 100%;
+    text-align: center;
+    button {
+      font-size: 16px;
+      line-height: 1.4;
+      padding: 12px 40px;
+      margin-top: 0px;
+    }
+  }
+}

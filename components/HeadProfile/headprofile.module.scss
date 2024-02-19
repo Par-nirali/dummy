@@ -1,0 +1,342 @@
+.headProMainDiv {
+  width: 100%;
+  height: 100%;
+}
+
+.headProContainer {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 30px;
+  transition: 0.9s ease-in-out;
+  //   background-color: #0e0c0d;
+}
+
+.headProSubDiv {
+  width: 28%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // gap: 15px;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #000;
+}
+.headProTop {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b4b4b4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  .headProDetailImg {
+    width: 80px;
+    height: 80px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .headProDetailName {
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #e7e7e7;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.2;
+      color: #8c8c8c;
+    }
+  }
+}
+.headProCenter {
+  width: 100%;
+  padding: 20px 0px;
+  border-bottom: 1px solid #b4b4b4;
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    // line-height: 1.2;
+    color: #8c8c8c;
+    margin-bottom: 10px;
+  }
+  .headProCenterText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background-color: #1a1819;
+    color: #e7e7e7;
+    margin-bottom: 10px;
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+  .headProCenterBtn {
+    width: 100%;
+    text-align: center;
+    button {
+      font-size: 20px;
+      line-height: 1.4;
+      font-weight: 500;
+      color: white;
+      padding: 12px 45px;
+      background-image: linear-gradient(
+        0deg,
+        rgba(187, 7, 200, 0.9),
+        rgb(158, 5, 112)
+      );
+      border: none;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+      width: fit-content;
+      opacity: 0.9;
+
+      &:hover {
+        opacity: 1;
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+.headProBottom {
+  width: 100%;
+  padding-top: 20px;
+  h2 {
+    font-size: 20px;
+    font-weight: 400;
+    // line-height: 1.2;
+    color: #8c8c8c;
+    margin-bottom: 10px;
+  }
+  .headProBottomText {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background-color: #1a1819;
+    color: #e7e7e7;
+    margin-bottom: 10px;
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+  .headProBottomBtn {
+    width: 100%;
+    text-align: center;
+    p {
+      margin-top: 10px;
+      font-size: 24px;
+      line-height: 1.4;
+      font-weight: 500;
+      color: #e7e7e7;
+      &:hover {
+        transition: 0.2s ease-in-out;
+      }
+    }
+  }
+}
+@media (max-width: 1250px) and (min-width: 1024px) {
+  .headProSubDiv {
+    width: 35%;
+    margin-top: 50px;
+    padding: 20px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 790px) {
+  .headProSubDiv {
+    width: 48%;
+    margin-top: 50px;
+    padding: 20px;
+  }
+}
+@media (max-width: 790px) and (min-width: 500px) {
+  .headProSubDiv {
+    width: 70%;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .headProTop {
+    width: 100%;
+    padding-bottom: 20px;
+    gap: 5px;
+    .headProDetailImg {
+      width: 60px;
+      height: 60px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .headProDetailName {
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .headProCenter {
+    width: 100%;
+    padding: 20px 0px;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .headProCenterText {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+    .headProCenterBtn {
+      width: 100%;
+      text-align: center;
+      button {
+        font-size: 18px;
+        line-height: 1.4;
+        padding: 12px 45px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .headProBottom {
+    width: 100%;
+    padding-top: 20px;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .headProBottomText {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+    .headProBottomBtn {
+      width: 100%;
+      text-align: center;
+      p {
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .headProSubDiv {
+    width: 90%;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .headProTop {
+    width: 100%;
+    padding-bottom: 20px;
+    gap: 5px;
+    .headProDetailImg {
+      width: 60px;
+      height: 60px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .headProDetailName {
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .headProCenter {
+    width: 100%;
+    padding: 20px 0px;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .headProCenterText {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+    .headProCenterBtn {
+      width: 100%;
+      text-align: center;
+      button {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 10px 45px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .headProBottom {
+    width: 100%;
+    padding-top: 20px;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .headProBottomText {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+    .headProBottomBtn {
+      width: 100%;
+      text-align: center;
+      p {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
